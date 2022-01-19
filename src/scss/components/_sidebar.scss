@@ -1,0 +1,50 @@
+// sidebar
+.sidebar {
+
+    // sizing
+    margin: 10px;
+    margin-right: 0;
+    padding: 10px;
+
+    // theming
+    background-color: $layer;
+    border-radius: 15px;
+
+    // grid
+    display: grid;
+    grid-column: 1;
+    align-content: flex-start;
+    gap: 10px;
+
+    // links
+    .link {
+        
+        // sizing
+        width: 100%;
+        height: 41px;
+        padding: 10px;
+
+        // font
+        font-size: 18px;
+        text-decoration: none;
+
+        // theming
+        color: $fg_light;
+        border-radius: 10px;
+
+        // hover
+        &:hover {
+            
+            // theming
+            background-color: $accent !important;
+            color: $fg_dark;
+        }
+
+        // current
+        &.current {
+
+            // theming
+            background-color: $layer;
+        }
+    }
+}

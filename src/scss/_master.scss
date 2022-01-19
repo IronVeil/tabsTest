@@ -1,0 +1,44 @@
+// master
+
+// imports
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&display=swap'); // fira sans
+
+// colors
+$bg: #121212;
+$fg_light: rgba(255,255,255,0.87);
+$fg_dark: rgba(0,0,0,0.87);
+$layer: rgba(255,255,255,0.05);
+
+$accent: #bb86fc;
+
+// fonts
+$ftitle: 48pt;
+$fbody: 18px;
+
+
+// reset
+* {
+
+    // sizing
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    // font
+    font-family: 'Fira Sans', sans-serif;
+    font-size: $fbody;
+}
+
+// body
+body {
+
+    // sizing
+    height: 100vh;
+
+    // theming
+    background-color: $bg;
+
+    // grid
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
