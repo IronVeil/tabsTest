@@ -7,22 +7,42 @@
     <title>Tabs</title>
     <link rel="stylesheet" href="/src/css/index.min.css">
 </head>
-<body onload="hide();">
+<body onload="hide(1);">
     <div class="sidebar">
-        <a href="javascript:selectTab(1)" class="link" id="firstTab">Tab</a>
-        <a href="javascript:selectTab(2)" class="link" id="firstTab">Tab</a>
+        <a href="javascript:selectTab(1)" class="link" id="tab1">Home</a>
+        <a href="javascript:selectTab(2)" class="link" id="tab2">About</a>
 
     </div>
     <div class="main">
 
         <!-- First Tab -->
-        <div id="tab1" class="tab">
-            hell
+        <div id="content1" class="tab">
+            <div class="heading">
+                <p class="title">Home</p>
+            </div>
+            <div class="section" style="grid-row: 2 / 4">This is a tall section</div>
+            <div class="section">This is a section</div>
+            <div class="section">This is a section</div>
+            <div class="section">This is a section</div>
+            <div class="section">This is a section</div>
+            <div class="section">This is a section</div>
+            <div class="section" style="grid-column: 2 / 4">This is a wide section</div>
         </div>
 
         <!-- Second Tab -->
-        <div id="tab2" class="tab">
-            goodbye loved ones
+        <div id="content2" class="tab">
+            <div class="heading">
+                <p class="title">About</p>
+            </div>
+            <div class="section" style="grid-column: 1 / 3">
+                <p>This website is just a test around a sidebar interface. It uses awful JS code to show and hide different divs. There is probably a better way to do this but I did all of it myself with no external tutorials or libraries.</p>
+            </div>
+            <div class="section" style="padding: 10px;">
+                <p class="subheading" style="padding: 10px;">Links:</p>
+                <a href="https://gitlab.com/iv-websites/tabs-test" class="weblink">View the code!</a>
+                <a href="https://gitlab.com/IronVeil" class="weblink">Visit my GitLab</a>
+                <a href="https://github.com/IronVeil" class="weblink">Visit my GitHub</a>
+            </div>
         </div>
     </div>
     <script src="/src/js/tabs.js"></script>
